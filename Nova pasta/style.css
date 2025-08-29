@@ -1,0 +1,134 @@
+:root {
+    --laranja-claro: #FF862A;
+    --alto-contraste-fundo: #000;
+    --alto-contraste-texto: #fff;
+    --alto-contraste-link: #ffd700;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    transition: font-size 0.3s, background-color 0.3s, color 0.3s;
+}
+
+.inicio-fundo {
+    background-image: url('img/4965007.jpg');
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    min-height: 400px;
+    border-radius: 30px;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.esquerda-conteudo h1 {
+    color: var(--laranja-claro);
+    font-size: 2rem;
+}
+
+.botao-inicio {
+    background-color: var(--laranja-claro);
+    border: none;
+    margin-top: 10px;
+}
+
+.img-inicio {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    margin-top: 20px;
+}
+
+.secao-tropicalia {
+    background: url('img/flor.png') top right no-repeat,
+                url('img/flor-esquerda.png') bottom left no-repeat;
+    background-size: 150px 150px;
+    padding: 3rem 1rem;
+}
+
+.fundo-galeria {
+    background: url('img/flor-bottom-direita.png') bottom right no-repeat;
+    background-size: 150px 150px;
+    background-color: #090808;
+    padding: 3rem 1rem;
+}
+
+.fundo-galeria img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 1rem;
+}
+
+.formulario {
+    background-color: #fff;
+    padding: 2rem;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    width: 100%;
+    max-width: 600px;
+    margin: auto;
+}
+
+.menu-acessibilidade {
+    position: fixed;
+    top: 1.5rem;
+    right: 1rem;
+    z-index: 1000;
+}
+
+.rotacao-botao {
+    transform: rotate(-90deg);
+}
+
+.opcoes-acessibilidade {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+}
+
+.apresenta-lista {
+    display: none;
+}
+
+.alto-contraste {
+    background-color: var(--alto-contraste-fundo);
+    color: var(--alto-contraste-texto);
+}
+
+.alto-contraste header,
+.alto-contraste footer,
+.alto-contraste .formulario {
+    background-color: var(--alto-contraste-fundo);
+    color: var(--alto-contraste-texto);
+}
+
+.alto-contraste .nav-link {
+    color: var(--alto-contraste-link);
+}
+
+.alto-contraste .botao-inicio,
+.alto-contraste .formulario button {
+    background-color: var(--alto-contraste-link);
+    color: var(--alto-contraste-fundo);
+}
+
+/* Responsividade */
+@media (max-width: 992px) {
+    .inicio-fundo { flex-direction: column; text-align: center; }
+    .img-inicio { margin-top: 15px; }
+}
+
+@media (max-width: 576px) {
+    .secao-tropicalia, .fundo-galeria {
+        background-size: 100px 100px;
+    }
+    .esquerda-conteudo h1 {
+        font-size: 1.5rem;
+    }
+    .botao-inicio {
+        width: 80%;
+    }
+}
+
