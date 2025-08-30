@@ -1,8 +1,8 @@
 :root {
-    --laranja-claro: #FF862A;
-    --alto-contraste-fundo: #000;
-    --alto-contraste-texto: #fff;
-    --alto-contraste-link: #ffd700;
+    --roxo: #d31be039;
+    --alto-contraste-fundo: #741989d0;
+    --alto-contraste-texto: #1a639e;
+    --alto-contraste-link: #0d18f1;
 }
 
 body {
@@ -10,8 +10,12 @@ body {
     transition: font-size 0.3s, background-color 0.3s, color 0.3s;
 }
 
+body {
+    background-color: var(--roxo);
+}
+
 .inicio-fundo {
-    background-image: url('img/4965007.jpg');
+    background-image: url('img/Dynamite.png');
     background-size: cover;
     background-position: center;
     width: 100%;
@@ -25,12 +29,12 @@ body {
 }
 
 .esquerda-conteudo h1 {
-    color: var(--laranja-claro);
+    color: var(--roxo);
     font-size: 2rem;
 }
 
 .botao-inicio {
-    background-color: var(--laranja-claro);
+    background-color: var(--roxo);
     border: none;
     margin-top: 10px;
 }
@@ -42,17 +46,17 @@ body {
     margin-top: 20px;
 }
 
-.secao-tropicalia {
-    background: url('img/flor.png') top right no-repeat,
-                url('img/flor-esquerda.png') bottom left no-repeat;
+.secao-bts{
+    background: url('img/BTS\ logo\ 2.png') top right no-repeat,
+                url('img/bts\ x\ army.png') bottom left no-repeat;
     background-size: 150px 150px;
     padding: 3rem 1rem;
 }
 
 .fundo-galeria {
-    background: url('img/flor-bottom-direita.png') bottom right no-repeat;
+    background: url('img/bts_simbolo.jpeg') bottom right no-repeat;
     background-size: 150px 150px;
-    background-color: #090808;
+    background-color: #c482d6d6;
     padding: 3rem 1rem;
 }
 
@@ -63,9 +67,9 @@ body {
 }
 
 .formulario {
-    background-color: #fff;
+    background-color: #856aa8c9;
     padding: 2rem;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    box-shadow: 0 0 10px rgba(167, 101, 191, 0.27);
     width: 100%;
     max-width: 600px;
     margin: auto;
@@ -121,7 +125,7 @@ body {
 }
 
 @media (max-width: 576px) {
-    .secao-tropicalia, .fundo-galeria {
+    .secao-bts, .fundo-galeria {
         background-size: 100px 100px;
     }
     .esquerda-conteudo h1 {
